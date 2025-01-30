@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Variables
-CONNECTOR="apolo"
-REMOTE_FILE="/home/jmgomezp/sound/cpu_usage_output.txt"
-PY_SCRIPT_PATH="/home/jmgomezp/sound"
-PY_SCRIPT="cpu.py"
-LOCAL_DIR="$HOME"
-NODES=$1
-TIMES=$2
+CONNECTOR=""
+REMOTE_FILE=""
+PY_SCRIPT_PATH=""
+PY_SCRIPT=""
+LOCAL_DIR=""
+NODES=$1 # argv[1]
+TIMES=$2 # argv[2]
 
 # Run the Python script on APOLO
 ssh -tt $CONNECTOR << EOF
